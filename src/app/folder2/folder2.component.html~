@@ -1,0 +1,47 @@
+  <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder2 }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content>
+  <cdk-virtual-scroll-viewport itemSize="56" minBufferPx="900" maxBufferPx="1350">
+    <ion-list>
+      <ion-item  *cdkVirtualFor="let drink of list">
+        <ion-avatar slot="start">
+          <img src="{{drink.strDrinkThumb}}"/>
+        </ion-avatar>
+        <ion-label>{{drink.strDrink}} </ion-label>
+      </ion-item>
+    </ion-list>
+  </cdk-virtual-scroll-viewport>
+</ion-content>
+
+
+
+
+<!--
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>{{cocktail.strAlcoholic}}</ion-card-subtitle>
+    <ion-card-title>{{cocktail.strDrink}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <img src="{{cocktail.strDrinkThumb}}" slot="center" alt="photo du cocktail" style="width:50%"/>
+    {{cocktail.strInstructions}}
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
+    {{ingredients.strIngredient}}
+    {{ingredients.strDescription}}
+  </ion-card-content>
+</ion-card>
+
+-->

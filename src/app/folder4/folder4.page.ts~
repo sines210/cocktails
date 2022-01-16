@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-folder4',
+  templateUrl: './folder4.page.html',
+  styleUrls: ['./folder4.page.scss'],
+})
+export class Folder4Page implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
