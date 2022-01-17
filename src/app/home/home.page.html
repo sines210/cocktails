@@ -4,9 +4,30 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-<ion-button>
-  Right Icon
-  <ion-icon slot="end" name="star"></ion-icon>
-</ion-button>
-</ion-content>
+<ion-grid id="center-items">
+  <ion-row class="ion-align-items-center">
+    <ion-col size="12">
+      <ion-button  :href="/folder">
+	See all the Categories
+	<ion-icon slot="start" name="list"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-align-items-center">
+    <ion-col size="12">
+      <ion-button  :href="/latest-cocktails">
+	See the latest Cocktails
+	<ion-icon slot="start" name="wine"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-align-items-center">
+    <ion-col size="12">
+      <ion-button :href="/folder4">
+	See the random selection of the day
+	<ion-icon slot="start" name="cloud-download"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
