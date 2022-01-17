@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder4 }}</ion-title>
+    <ion-title>{{ latest-cocktails }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,7 +11,7 @@
   <ion-content>
   <cdk-virtual-scroll-viewport itemSize="56" minBufferPx="900" maxBufferPx="1350">
     <ion-list>
-      <ion-item *cdkVirtualFor="let drink of list"  :href="/folder3/{{drink.id}}">
+      <ion-item *cdkVirtualFor="let drink of list"  :href="/folder3/{{drink.idDrink}}">
         <ion-avatar slot="start">
           <img src="{{drink.strDrinkThumb}}"/>
         </ion-avatar>
@@ -20,8 +20,5 @@
     </ion-list>
   </cdk-virtual-scroll-viewport>
 </ion-content>
-
-
-
 
 

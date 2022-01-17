@@ -46,8 +46,8 @@ export class HttpRequestsService {
   		   }
 
 		   		   
-  	getListByCategory(id:string):Observable<Ingredients[]>{
-			 return this.http.get<Ingredients[]>(`https://the-cocktail-db.p.rapidapi.com/filter.php?c=${id}`,
+  	getListByCategory(id:string):Observable<RandomList[]>{
+			 return this.http.get<RandomList[]>(`https://the-cocktail-db.p.rapidapi.com/filter.php?c=${id}`,
 		{
 			 "headers": {
 		      "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",

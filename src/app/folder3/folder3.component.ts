@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, Subject, Subscription } from 'rxjs';
-import { ModalController } from '@ionic/angular';
-import { ModalCartPage } from '../modal-cart/modal-cart.page';
+/*import { ModalController } from '@ionic/angular';
+import { ModalCartPage } from '../modal-cart/modal-cart.page';*/
 
 import { HttpRequestsService } from '../services/http-requests.service';
 import { RandomList } from '../models/randomList';
@@ -16,12 +16,12 @@ import { RandomList } from '../models/randomList';
 
 export class Folder3Component implements OnInit {
 
-  constructor(private http: HttpRequestsService, private activatedRoute:ActivatedRoute, public modalController: ModalController) { }
+  constructor(private http: HttpRequestsService, private activatedRoute:ActivatedRoute) { }
 
 
 id: string;
 list: RandomList[];
-
+/*modalOptions: ModalOptions[];*/
 
 
 
@@ -36,7 +36,7 @@ list: RandomList[];
   }
 
 
-  async presentModal(){
+/*  async presentModal(){
   	const modal = await this.modalController.create({
 	      	 component: ModalCartPage,
 		 cssClass: 'my-custom-class',
@@ -50,5 +50,5 @@ list: RandomList[];
 	return await modal.present();
 	}
 
-
+*/
 }

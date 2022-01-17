@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
  {  path: '',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)},
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
     
   {path: 'folder/:id',
    redirectTo: 'folder2/:id',
@@ -23,8 +23,15 @@ const routes: Routes = [
   {
     path: 'folder4',
     loadChildren: () => import('./folder4/folder4.module').then( m => m.Folder4PageModule)
+  },
+  {
+    path: 'latest-cocktails',
+    loadChildren: () => import('./latest-cocktails/latest-cocktails.module').then( m => m.LatestCocktailsPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   }
-
 ];
 
 @NgModule({

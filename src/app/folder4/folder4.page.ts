@@ -30,6 +30,7 @@ list:RandomList[];
       this.http.getAllCocktailsRandom()
       .subscribe((res)=>{
 	this.list = res['drinks'];
+	console.log(res)
       })
 
   }

@@ -25,7 +25,6 @@ list: RandomList[]
 
       this.http.getAllCocktailsRandom()
       .subscribe((res)=>{
-	console.log(res)
 	this.list = res['drinks'];
       })
 

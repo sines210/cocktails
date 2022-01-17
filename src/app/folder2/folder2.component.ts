@@ -26,17 +26,11 @@ list: RandomList[];
     this.id = this.activatedRoute.snapshot.paramMap.get('id');
 
 
-
     this.http.getListByCategory(this.id)
     .subscribe((res)=>{
 	this.list = res['drinks'];
     })
 
-
-/*    this.http.getCocktail(this.id)
-    .subscribe((res)=>{
-	this.cocktail = res['drinks'][0];
-    })*/
 
 
   }

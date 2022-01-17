@@ -5,14 +5,14 @@ import { Observable, Subject, Subscription } from 'rxjs';
 import { HttpRequestsService } from '../services/http-requests.service';
 import { RandomList } from '../models/randomList';
 
+
 @Component({
-  selector: 'app-folder',
-  templateUrl: './folder.page.html',
-  styleUrls: ['./folder.page.scss'],
+  selector: 'app-latest-cocktails',
+  templateUrl: './latest-cocktails.page.html',
+  styleUrls: ['./latest-cocktails.page.scss'],
 })
+export class LatestCocktailsPage implements OnInit {
 
-
-export class FolderPage implements OnInit {
   public folder:string;
   list:RandomList[];
   idDrink:string;
@@ -25,7 +25,7 @@ export class FolderPage implements OnInit {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
     
 
-    this.httpRequest.getListCategories()
+    this.httpRequest.getLatestCocktailsList()
     .subscribe((res)=>{
 	this.list = res['drinks'];
     })

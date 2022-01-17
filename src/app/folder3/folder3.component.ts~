@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, Subject, Subscription } from 'rxjs';
 import { ModalController } from '@ionic/angular';
@@ -6,7 +6,7 @@ import { ModalCartPage } from '../modal-cart/modal-cart.page';
 
 import { HttpRequestsService } from '../services/http-requests.service';
 import { RandomList } from '../models/randomList';
-
+/*import { ModalOptions } from '../models/modal'*/;
 
 @Component({
   selector: 'app-folder3',
@@ -21,7 +21,7 @@ export class Folder3Component implements OnInit {
 
 id: string;
 list: RandomList[];
-
+/*modalOptions: ModalOptions[];*/
 
 
 
@@ -39,7 +39,13 @@ list: RandomList[];
   async presentModal(){
   	const modal = await this.modalController.create({
 	      	 component: ModalCartPage,
-		 cssClass: 'my-custom-class'
+		 cssClass: 'my-custom-class',
+		 componentProps: {
+		 	title: 'Panier',
+			article: 0,
+			total: 0,
+			submit: 'Payer'
+		 }
 	      });
 	return await modal.present();
 	}

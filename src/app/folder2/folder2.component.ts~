@@ -18,7 +18,7 @@ export class Folder2Component implements OnInit {
 
 id: string;
 list: RandomList[];
-ingredients: Ingredients[];
+
 
 
 
