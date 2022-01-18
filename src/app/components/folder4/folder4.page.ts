@@ -2,19 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, Subject, Subscription } from 'rxjs';
 
-import { RandomList } from '../models/randomList';
-import { HttpRequestsService } from '../services/http-requests.service';
+import { RandomList } from '../../models/randomList';
+import { HttpRequestsService } from '../../services/http-requests.service';
+
 
 
 @Component({
-  selector: 'app-random-list',
-  templateUrl: './random-list.page.html',
-  styleUrls: ['./random-list.page.scss'],
+  selector: 'app-folder4',
+  templateUrl: './folder4.page.html',
+  styleUrls: ['./folder4.page.scss'],
 })
-export class RandomListPage implements OnInit {
-id: string;
-list: RandomList[]
 
+
+
+export class Folder4Page implements OnInit {
+
+id:string;
+list:RandomList[];
 
 
   constructor(private http: HttpRequestsService,  private activatedRoute:ActivatedRoute) { }
@@ -26,10 +30,10 @@ list: RandomList[]
       this.http.getAllCocktailsRandom()
       .subscribe((res)=>{
 	this.list = res['drinks'];
+	console.log(res)
       })
 
   }
-
 
 
 }

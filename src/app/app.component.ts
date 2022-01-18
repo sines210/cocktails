@@ -10,6 +10,7 @@ export class AppComponent {
     { title: 'Categories', url: '/folder', icon: 'list' },
     { title: 'Latest Cocktails', url: '/latest-cocktails', icon: 'wine' },
     { title: 'Random Selection', url: '/folder4', icon: 'cloud-download' },
+    { title: 'Share Your Recipes', url: '/share-recipes', icon: 'color-wand' }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}

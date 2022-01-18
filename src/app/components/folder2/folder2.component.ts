@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, Subject, Subscription } from 'rxjs';
 
-import { HttpRequestsService } from '../services/http-requests.service';
-import { RandomList } from '../models/randomList';
+import { HttpRequestsService } from '../../services/http-requests.service';
+import { RandomList } from '../../models/randomList';
 
 
 @Component({
@@ -26,17 +26,11 @@ list: RandomList[];
     this.id = this.activatedRoute.snapshot.paramMap.get('id');
 
 
-
     this.http.getListByCategory(this.id)
     .subscribe((res)=>{
 	this.list = res['drinks'];
     })
 
-
-/*    this.http.getCocktail(this.id)
-    .subscribe((res)=>{
-	this.cocktail = res['drinks'][0];
-    })*/
 
 
   }
