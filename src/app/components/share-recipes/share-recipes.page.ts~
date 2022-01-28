@@ -30,11 +30,8 @@ crud: Crud[];
 	console.log(this.crud)
 
 	this.http.postFormService(this.crud)
-	.subscribe((res)=>{
-		console.log(res)
-		alert("Votre recette a bien été envoyée pour publication")
-		/*ici soit mettre une alerte ionic custom avec redirection a l'accueil ou a la recette pubiliee ou bien une alerte avec delay et redirection*/
-		})
+	.subscribe((res)=>{console.log(res)})
+	/*console.log(this.name)*/
 
 
 	}

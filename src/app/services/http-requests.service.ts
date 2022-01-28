@@ -21,7 +21,8 @@ export class HttpRequestsService {
 		{
 			 "headers": {
 		      "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-		      "x-rapidapi-key": ""}
+		      "x-rapidapi-key": "29e104d4a7mshb365983abdb823ap1b0fa8jsn456511\
+362ded"}
 		      })  		      	  
   		   }
 
@@ -31,7 +32,8 @@ export class HttpRequestsService {
 		{
 			 "headers": {
 		      "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-		      "x-rapidapi-key": ""}
+		      "x-rapidapi-key": "29e104d4a7mshb365983abdb823ap1b0fa8jsn456511\
+362ded"}
 		      })  		      	  
   		   }
 
@@ -41,7 +43,8 @@ export class HttpRequestsService {
 		{
 			 "headers": {
 		      "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-		      "x-rapidapi-key": ""}
+		      "x-rapidapi-key": "29e104d4a7mshb365983abdb823ap1b0fa8jsn456511\
+362ded"}
 		      })  		      	  
   		   }
 
@@ -51,7 +54,8 @@ export class HttpRequestsService {
 		{
 			 "headers": {
 		      "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-		      "x-rapidapi-key": ""}
+		      "x-rapidapi-key": "29e104d4a7mshb365983abdb823ap1b0fa8jsn456511\
+362ded"}
 		      })  		      	  
   		   }
 
@@ -62,7 +66,8 @@ export class HttpRequestsService {
 		{
 			 "headers": {
 		      "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-		      "x-rapidapi-key": ""}
+		      "x-rapidapi-key": "29e104d4a7mshb365983abdb823ap1b0fa8jsn456511\
+362ded"}
 		      })  		      	  
   		   }
 

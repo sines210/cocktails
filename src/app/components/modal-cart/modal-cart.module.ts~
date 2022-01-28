@@ -15,7 +15,6 @@ import { ModalCartPage } from './modal-cart.page';
     IonicModule,
     ModalCartPageRoutingModule
   ],
-  exports: [ModalCartPage],
   declarations: [ModalCartPage]
 })
 export class ModalCartPageModule {}

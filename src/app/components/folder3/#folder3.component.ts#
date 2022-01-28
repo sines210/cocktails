@@ -36,6 +36,7 @@ list: RandomList[];
   }
 
 
+
 /*
   async presentModal(){
   	const modal = await this.modalController.create({

@@ -7,32 +7,35 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ModalCartPage implements OnInit {
 
-      /* @Input() title: string;
+       @Input() title: string;
        @Input() article: number;
        @Input() total: number;
-       @Input() submit: string;*/
+       @Input() submit: string;
 
-       articles: number=0;
+
+      /* article: number=0;
        total:  number=0;
-
+*/
   constructor() { }
 
   ngOnInit() {
 
-	 this.articles++;
+
+
+/*	 this.article++;
 	 this.total = this.total + 10
   	     
   }
 
 	addArticle(){
-	  this.articles++;
+	  this.article++;
 	  this.total = this.total + 10 
 	}
 
 	
 	removeArticle(){
-	  this.articles--;
-	  this.total = this.total - 10;
+	  this.article--;
+	  this.total = this.total - 10;*/
 	}
-
 }
+

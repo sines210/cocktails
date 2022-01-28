@@ -14,25 +14,19 @@
   <ion-card-content>
     <img src="{{list.strDrinkThumb}}" slot="center" alt="photo du cocktail" style="width:50%"/>
      <ion-fab class="cart" vertical="center" slot="fixed">
-    <ion-fab-button  :href="/modal-cart">
+    <ion-fab-button id="trigger-button">
     <ion-icon name="cart-sharp"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 
 
-<!--<ion-modal trigger="trigger-button">
+<ion-modal trigger="trigger-button">
   <ng-template>
     <ion-content>
       <app-modal-cart></app-modal-cart>
-      <ion-list>
-	<ion-item>{{title}}</ion-item>
-	<ion-item>{{article}}</ion-item>
-	<ion-item>{{total}}</ion-item>
-	<ion-button>{{submit}}</ion-button>-
-      </ion-list>	
     </ion-content>
   </ng-template>
-</ion-modal>-->
+</ion-modal>
      
   </ion-card-content>
   <ion-card-content>

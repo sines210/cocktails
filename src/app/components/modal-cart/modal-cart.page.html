@@ -1,18 +1,16 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Orders</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 
-<ion-content class='main-cart'>
+
+  <ion-item>{{title}}</ion-item>
   <ion-item>
          <ion-icon class="shop-bag remove-article" (click)="removeArticle()" name="bag-remove"></ion-icon>
-    {{articles}}
+    {{article}}
          <ion-icon class="shop-bag add-article" (click)="addArticle()" name="bag-add"></ion-icon>
   </ion-item>
   <ion-item>{{total}}€</ion-item>
   <ion-item> 
   <ion-button>Payer</ion-button>
 </ion-item>
-</ion-content>
+
+
+
