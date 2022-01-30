@@ -5,10 +5,10 @@
 </ion-header>
 
 <ion-content>
-  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <form (ngSubmit)="onSubmit(name.value, type.value, category.value, instructions.value, ingredient1.value, ingredient2.value, ingredient3.value, ingredient4.value, ingredient5.value, ingredient6.value)">
     <ion-item>
       <ion-label>Name</ion-label>
-      <ion-input type="text" name="name" ngModel></ion-input>
+      <ion-input type="text" #name ></ion-input>
     </ion-item>
 <!--    <ion-item>
       <ion-label>Photo</ion-label>
@@ -16,14 +16,14 @@
     </ion-item>-->
     <ion-item>
       <ion-label>Type</ion-label>
-      <ion-select placeholder="Select One"  name="type" ngModel>
+      <ion-select placeholder="Select One"  #type>
 	<ion-select-option value="alcoholic">Alcoholic</ion-select-option>
 	<ion-select-option value="AlcoholFree">Non-Alcoholic</ion-select-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Category</ion-label>
-      <ion-select placeholder="Select One" name="category" ngModel>
+      <ion-select placeholder="Select One" #category>
 	<ion-select-option value="Ordinary">Ordinary Drink</ion-select-option>
 	<ion-select-option value="Cocktail">Cocktail</ion-select-option>
 	<ion-select-option value="MilkFloatShake">Milk/Float/Shake</ion-select-option>
@@ -39,31 +39,31 @@
     </ion-item>
     <ion-item>
       <ion-label>Instructions</ion-label>
-      <ion-input type="text" name="instructions" ngModel></ion-input>
+      <ion-input type="text" #instructions></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Ingredient 1</ion-label>
-      <ion-input type="text" name="ingredient1" ngModel></ion-input>
+      <ion-input type="text" #ingredient1></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Ingredient2</ion-label>
-      <ion-input type="text" name="ingredient2" ngModel></ion-input>
+      <ion-input type="text" #ingredient2></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input type="text" name="ingredient3" ngModel></ion-input>
-      <ion-input></ion-input>
+      <ion-label>Ingredient3</ion-label>
+      <ion-input type="text" #ingredient3></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input type="text" name="ingredient4" ngModel></ion-input>
-      <ion-input></ion-input>
+      <ion-label>Ingredient4</ion-label>
+      <ion-input type="text" #ingredient4></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input type="text" name="ingredient5" ngModel></ion-input>
-      <ion-input></ion-input>
+      <ion-label>Ingredient5</ion-label>
+      <ion-input type="text" #ingredient5></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input type="text" name="ingredient6" ngModel></ion-input>
-      <ion-input></ion-input>
+      <ion-label>Ingredient6</ion-label>
+      <ion-input type="text" #ingredient6></ion-input>
     </ion-item>
     <ion-item>
       <ion-button type="submit">Send</ion-button>

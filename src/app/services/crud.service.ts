@@ -13,7 +13,15 @@ export class CrudService {
 constructor(private http: HttpClient) {}
  
 
-  	postFormService(crud:any):Observable<any>{
+/* methode ngForm
+   	   postFormService(crud:any):Observable<any>{
 	     return this.http.post('http://localhost:3000/index.php',crud, { responseType:'text'} )
+	}*/
+
+
+	postFormService(formData:FormData):Observable<any>{
+		return this.http.post('http://localhost:3000/index.php', formData, {responseType:'text'})
 	}
+
+
 }

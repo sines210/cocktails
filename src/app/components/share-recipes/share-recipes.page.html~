@@ -37,7 +37,7 @@
 	<ion-select-option value="SoftDrinkSoda">Soft Drink/Soda</ion-select-option>
       </ion-select>
     </ion-item>
-   <!-- <ion-item>
+    <ion-item>
       <ion-label>Instructions</ion-label>
       <ion-input type="text" name="instructions" ngModel></ion-input>
     </ion-item>
@@ -50,21 +50,21 @@
       <ion-input type="text" name="ingredient2" ngModel></ion-input>
     </ion-item>
     <ion-item>
+      <ion-label>Ingredient3</ion-label>
       <ion-input type="text" name="ingredient3" ngModel></ion-input>
-      <ion-input></ion-input>
     </ion-item>
     <ion-item>
+      <ion-label>Ingredient4</ion-label>
       <ion-input type="text" name="ingredient4" ngModel></ion-input>
-      <ion-input></ion-input>
     </ion-item>
     <ion-item>
+      <ion-label>Ingredient5</ion-label>
       <ion-input type="text" name="ingredient5" ngModel></ion-input>
-      <ion-input></ion-input>
     </ion-item>
     <ion-item>
+      <ion-label>Ingredient6</ion-label>
       <ion-input type="text" name="ingredient6" ngModel></ion-input>
-      <ion-input></ion-input>
-    </ion-item>-->
+    </ion-item>
     <ion-item>
       <ion-button type="submit">Send</ion-button>
     </ion-item>

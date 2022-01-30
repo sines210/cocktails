@@ -9,16 +9,8 @@ import { Crud } from '../models/crud';
 })
 export class CrudService {
 
-/*crud:Crud[]; 	*/
 
-/*
-const optionRequete = {
-  headers: new HttpHeaders({ 
-    'Access-Control-Allow-Origin':'*'
-  })
-};
-*/
-  constructor(private http: HttpClient) {}
+constructor(private http: HttpClient) {}
  
 
   	postFormService(crud:any):Observable<any>{
